@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ACENO Café | Good Coffee. Good Mood.</title>
+	<meta name="description" content="ACENO is a modern café serving premium coffee, fresh pastries, and handcrafted drinks. Good Coffee. Good Mood." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="coffee.svg" />
+</head>
+<body>
+	<!-- Header / Navigation -->
+	<header class="header" id="header">
+		<div class="container nav-container">
+			<a href="#home" class="logo" aria-label="ACENO Home">ACENO</a>
+			<nav class="nav" aria-label="Primary">
+				<button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
+				<ul id="nav-menu" class="nav-menu">
+					<li><a href="#home" class="nav-link">Home</a></li>
+					<li><a href="#menu" class="nav-link">Menu</a></li>
+					<li><a href="#gallery" class="nav-link">Gallery</a></li>
+					<li><a href="#contact" class="nav-link">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<!-- Hero -->
+		<section class="hero section" id="home" aria-label="Hero">
+			<!-- Background image via CSS -->
+			<div class="container hero-inner">
+				<h1 class="hero-title animate-up">ACENO</h1>
+				<p class="hero-subtitle animate-up">Good Coffee. Good Mood.</p>
+				<a href="#menu" class="btn btn-primary animate-up" data-scroll>View Menu</a>
+			</div>
+			<div class="hero-overlay" aria-hidden="true"></div>
+		</section>
+
+		<!-- About -->
+		<section class="about section fade-in" id="about" aria-labelledby="about-title">
+			<div class="container grid two-col">
+				<div class="about-media">
+					<img src="about-coffee-bar.svg" width="800" height="1000" loading="lazy" alt="Freshly brewed coffee at ACENO café" />
+				</div>
+				<div class="about-content">
+					<h2 id="about-title" class="section-title">About Us</h2>
+					<p>ACENO is a modern café located in the heart of the city. We serve premium coffee, fresh pastries, and handcrafted drinks made with passion. At ACENO, every cup tells a story.</p>
+					<ul class="checks">
+						<li>Single-origin espresso</li>
+						<li>Freshly baked, daily</li>
+						<li>Cozy, calm workspace</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Specialties -->
+		<section class="specialties section fade-in" id="specialties" aria-labelledby="specialties-title">
+			<div class="container">
+				<h2 id="specialties-title" class="section-title center">Our Specialties</h2>
+				<div class="grid cards">
+					<article class="card">
+						<img src="coffee.svg" alt="" class="icon" loading="lazy" />
+						<h3>Espresso</h3>
+						<p>Bold, rich, and aromatic shots pulled to perfection.</p>
+					</article>
+					<article class="card">
+						<img src="latte.svg" alt="" class="icon" loading="lazy" />
+						<h3>Latte Art</h3>
+						<p>Silky steamed milk with beautifully poured designs.</p>
+					</article>
+					<article class="card">
+						<img src="pastry.svg" alt="" class="icon" loading="lazy" />
+						<h3>Pastries</h3>
+						<p>Oven-fresh croissants, tarts, and seasonal bakes.</p>
+					</article>
+					<article class="card">
+						<img src="tea.svg" alt="" class="icon" loading="lazy" />
+						<h3>Teas</h3>
+						<p>Handpicked blends for a calm, balanced sip.</p>
+					</article>
+					<article class="card">
+						<img src="breakfast.svg" alt="" class="icon" loading="lazy" />
+						<h3>Breakfast</h3>
+						<p>Healthy bowls, toasts, and classic morning favorites.</p>
+					</article>
+					<article class="card">
+						<img src="snack.svg" alt="" class="icon" loading="lazy" />
+						<h3>Snacks</h3>
+						<p>Light bites crafted to pair with any drink.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- Menu -->
+		<section class="menu section fade-in" id="menu" aria-labelledby="menu-title">
+			<div class="container">
+				<h2 id="menu-title" class="section-title center">Menu</h2>
+				<div class="menu-grid">
+					<!-- Coffee & Drinks -->
+					<div class="menu-group">
+						<h3 class="menu-heading">☕ Coffee & Drinks</h3>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<span class="menu-icon" aria-hidden="true">☕</span>
+								<div class="menu-meta">
+									<h4 class="menu-name">Cappuccino</h4>
+									<p class="menu-desc">Balanced espresso, velvety foam.</p>
+								</div>
+								<strong class="menu-price">$4.50</strong>
+							</li>
+							<li class="menu-item">
+								<span class="menu-icon" aria-hidden="true">🥤</span>
+								<div class="menu-meta">
+									<h4 class="menu-name">Iced Latte</h4>
+									<p class="menu-desc">Chilled espresso, milk, light sweetness.</p>
+								</div>
+								<strong class="menu-price">$5.00</strong>
+							</li>
+							<li class="menu-item">
+								<span class="menu-icon" aria-hidden="true">🍫</span>
+								<div class="menu-meta">
+									<h4 class="menu-name">Mocha</h4>
+									<p class="menu-desc">Espresso, cocoa, and steamed milk.</p>
+								</div>
+								<strong class="menu-price">$5.25</strong>
+							</li>
+						</ul>
+					</div>
+					<!-- Pastries & Desserts -->
+					<div class="menu-group">
+						<h3 class="menu-heading">🥐 Pastries & Desserts</h3>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<span class="menu-icon" aria-hidden="true">🥐</span>
+								<div class="menu-meta">
+									<h4 class="menu-name">Butter Croissant</h4>
+									<p class="menu-desc">Flaky, buttery layers baked daily.</p>
+								</div>
+								<strong class="menu-price">$3.50</strong>
+							</li>
+							<li class="menu-item">
+								<span class="menu-icon" aria-hidden="true">🫐</span>
+								<div class="menu-meta">
+									<h4 class="menu-name">Blueberry Muffin</h4>
+									<p class="menu-desc">Moist muffin with fresh berries.</p>
+								</div>
+								<strong class="menu-price">$3.25</strong>
+							</li>
+							<li class="menu-item">
+								<span class="menu-icon" aria-hidden="true">🍰</span>
+								<div class="menu-meta">
+									<h4 class="menu-name">Cheesecake Slice</h4>
+									<p class="menu-desc">Creamy classic topped with coulis.</p>
+								</div>
+								<strong class="menu-price">$4.75</strong>
+							</li>
+						</ul>
+					</div>
+					<!-- Breakfast & Snacks -->
+					<div class="menu-group">
+						<h3 class="menu-heading">🍽 Breakfast & Snacks</h3>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<span class="menu-icon" aria-hidden="true">🍞</span>
+								<div class="menu-meta">
+									<h4 class="menu-name">Avocado Toast</h4>
+									<p class="menu-desc">Sourdough, smashed avo, chili flakes.</p>
+								</div>
+								<strong class="menu-price">$6.50</strong>
+							</li>
+							<li class="menu-item">
+								<span class="menu-icon" aria-hidden="true">🥗</span>
+								<div class="menu-meta">
+									<h4 class="menu-name">Greek Yogurt Bowl</h4>
+									<p class="menu-desc">Granola, honey, seasonal fruit.</p>
+								</div>
+								<strong class="menu-price">$5.75</strong>
+							</li>
+							<li class="menu-item">
+								<span class="menu-icon" aria-hidden="true">🥪</span>
+								<div class="menu-meta">
+									<h4 class="menu-name">Chicken Panini</h4>
+									<p class="menu-desc">Herb chicken, tomato, mozzarella.</p>
+								</div>
+								<strong class="menu-price">$7.25</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Gallery -->
+		<section class="gallery section fade-in" id="gallery" aria-labelledby="gallery-title">
+			<div class="container">
+				<h2 id="gallery-title" class="section-title center">Gallery</h2>
+				<div class="gallery-grid">
+					<a href="gallery-1-ambiance.svg" class="gallery-item" data-lightbox>
+						<img src="gallery-1-ambiance.svg" alt="Coffee shop ambiance" width="800" height="600" loading="lazy" />
+					</a>
+					<a href="gallery-2-barista.svg" class="gallery-item" data-lightbox>
+						<img src="gallery-2-barista.svg" alt="Barista preparing coffee" width="800" height="600" loading="lazy" />
+					</a>
+					<a href="gallery-3-latte-art.svg" class="gallery-item" data-lightbox>
+						<img src="gallery-3-latte-art.svg" alt="Latte art close-up" width="800" height="600" loading="lazy" />
+					</a>
+					<a href="gallery-4-pastries.svg" class="gallery-item" data-lightbox>
+						<img src="gallery-4-pastries.svg" alt="Fresh croissants and pastries" width="800" height="600" loading="lazy" />
+					</a>
+					<a href="gallery-5-iced-latte.svg" class="gallery-item" data-lightbox>
+						<img src="gallery-5-iced-latte.svg" alt="Iced latte with coffee beans" width="800" height="600" loading="lazy" />
+					</a>
+					<a href="gallery-6-breakfast.svg" class="gallery-item" data-lightbox>
+						<img src="gallery-6-breakfast.svg" alt="Breakfast toast and coffee" width="800" height="600" loading="lazy" />
+					</a>
+					<a href="gallery-7-dessert.svg" class="gallery-item" data-lightbox>
+						<img src="gallery-7-dessert.svg" alt="Dessert slice and coffee" width="800" height="600" loading="lazy" />
+					</a>
+					<a href="gallery-8-pour-over.svg" class="gallery-item" data-lightbox>
+						<img src="gallery-8-pour-over.svg" alt="Pour over coffee" width="800" height="600" loading="lazy" />
+					</a>
+					<a href="gallery-9-seating.svg" class="gallery-item" data-lightbox>
+						<img src="gallery-9-seating.svg" alt="Cozy seating area" width="800" height="600" loading="lazy" />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Testimonials -->
+		<section class="testimonials section fade-in" id="testimonials" aria-labelledby="testimonials-title">
+			<div class="container">
+				<h2 id="testimonials-title" class="section-title center">What Our Guests Say</h2>
+				<div class="grid testimonial-grid">
+					<figure class="testimonial">
+						<blockquote>“Best cappuccino in town!”</blockquote>
+						<figcaption>— Sofia R.</figcaption>
+					</figure>
+					<figure class="testimonial">
+						<blockquote>“Calm atmosphere, excellent service.”</blockquote>
+						<figcaption>— Marcus L.</figcaption>
+					</figure>
+					<figure class="testimonial">
+						<blockquote>“My favorite place to work and relax.”</blockquote>
+						<figcaption>— Aisha K.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="contact section fade-in" id="contact" aria-labelledby="contact-title">
+			<div class="container grid two-col">
+				<div class="contact-content">
+					<h2 id="contact-title" class="section-title">Get in Touch</h2>
+					<p>We’d love to hear from you. Drop a message or visit us.</p>
+					<form class="contact-form" aria-label="Contact form" onsubmit="event.preventDefault(); alert('Thank you! We will get back to you shortly.');">
+						<div class="form-field">
+							<label for="name">Name</label>
+							<input id="name" name="name" type="text" placeholder="Your name" required />
+						</div>
+						<div class="form-field">
+							<label for="email">Email</label>
+							<input id="email" name="email" type="email" placeholder="you@example.com" required />
+						</div>
+						<div class="form-field">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Send Message</button>
+					</form>
+					<div class="contact-info">
+						<h3>Contact Details</h3>
+						<ul>
+							<li><strong>Address:</strong> 123 City Center, Downtown</li>
+							<li><strong>Phone:</strong> (123) 456-7890</li>
+							<li><strong>Email:</strong> hello@aceno.cafe</li>
+						</ul>
+						<div class="hours">
+							<h3>Opening Hours</h3>
+							<ul>
+								<li>Mon–Fri: 7:00 AM – 8:00 PM</li>
+								<li>Sat: 8:00 AM – 9:00 PM</li>
+								<li>Sun: 8:00 AM – 6:00 PM</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="map-wrapper" aria-hidden="false" aria-label="Map">
+					<!-- Google Maps Embed Placeholder -->
+					<div class="map-embed">
+						<iframe title="ACENO Café Location (Placeholder)" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=New%20York%20City&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container footer-inner">
+			<a href="#home" class="logo footer-logo">ACENO</a>
+			<ul class="socials" aria-label="Social media">
+				<li><a href="#" aria-label="Instagram" class="social-link">
+					<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm11 1a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/></svg>
+				</a></li>
+				<li><a href="#" aria-label="Twitter" class="social-link">
+					<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.27 4.27 0 00-7.28 3.89A12.1 12.1 0 013 5.16a4.26 4.26 0 001.32 5.7 4.26 4.26 0 01-1.93-.53v.05a4.27 4.27 0 003.43 4.19 4.28 4.28 0 01-1.92.07 4.27 4.27 0 003.99 2.97A8.57 8.57 0 012 19.54 12.09 12.09 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68l-.01-.53A8.35 8.35 0 0022.46 6z"/></svg>
+				</a></li>
+				<li><a href="#" aria-label="Facebook" class="social-link">
+					<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M22 12a10 10 0 10-11.5 9.95v-7.04H8.1V12h2.4V9.8c0-2.37 1.41-3.68 3.57-3.68 1.03 0 2.1.18 2.1.18v2.3h-1.18c-1.16 0-1.52.72-1.52 1.46V12h2.59l-.41 2.91h-2.18v7.04A10 10 0 0022 12z"/></svg>
+				</a></li>
+			</ul>
+			<div class="legal">
+				<p>© <span id="year"></span> ACENO. All rights reserved.</p>
+				<p>Designed by NovaTech Solutions</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+	<script type="module">
+		import { injectSpeedInsights } from '@vercel/speed-insights';
+		injectSpeedInsights();
+	</script>
+</body>
+</html>
+
+
