@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f6eee5"/>
+  <polygon points="340,100 460,100 500,260 300,260" fill="#e0d2c5"/>
+  <polygon points="320,260 480,260 460,380 340,380" fill="#c89a72"/>
+  <polygon points="340,380 460,380 440,430 360,430" fill="#5e4335"/>
+  <circle cx="400" cy="310" r="32" fill="#f6eee5" opacity="0.5"/>
+  <text x="50%" y="520" text-anchor="middle" fill="#6d584c" font-family="Poppins, sans-serif" font-size="22">Pour Over</text>
+</svg>
+
+
